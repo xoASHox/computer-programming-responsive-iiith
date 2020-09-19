@@ -41,6 +41,8 @@ window.view = {
 		var inputValue = document.getElementById('nestedLoopInput').value
 		model.nestedInp = Number(inputValue)
 		this.clearExecutionSection()
+		if(InputValue>20){
+			alert("invalidinput")}
 	},
 	activateEvents: function() {
 		this.addClickEvent('btnNext', function() { view.nextBtn() })
